@@ -1,5 +1,4 @@
 #include <Arduino.h>
-#include <LiquidCrystal.h>
 
 // int ejercicio1();
 // void ejercicio2();
@@ -209,7 +208,7 @@ void ejercicio5() {
   Serial.println(dato);
   int dato_len = dato.length() + 1; 
   char dato_array[dato_len];
-  dato.toCharArray(dato_array, dato_len);
+  dato.toCharArray(dato_array, dato_len); 
   for (int i = 0; i < dato_len -1; i++) {
     pot = dato_array[i];
     if (pot == 49) {
